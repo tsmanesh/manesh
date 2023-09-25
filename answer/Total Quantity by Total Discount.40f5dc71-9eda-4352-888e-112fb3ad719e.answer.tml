@@ -5,38 +5,29 @@ answer:
   - id: Parameters WS
     name: Parameters WS
     fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
-  search_query: "[Color] [Discount] [Quantity]"
+  search_query: "[Discount] [Quantity]"
   answer_columns:
-  - name: Color
   - name: Total Discount
   - name: Total Quantity
   table:
     table_columns:
-    - column_id: Color
-      headline_aggregation: COUNT_DISTINCT
     - column_id: Total Discount
       headline_aggregation: SUM
     - column_id: Total Quantity
       headline_aggregation: SUM
     ordered_column_ids:
-    - Color
     - Total Discount
     - Total Quantity
     client_state: ""
     client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
   chart:
-    type: SCATTER
+    type: KPI
     chart_columns:
-    - column_id: Color
     - column_id: Total Discount
     - column_id: Total Quantity
     axis_configs:
-    - x:
+    - "y":
       - Total Discount
-      "y":
-      - Total Quantity
-      category:
-      - Color
     client_state: ""
-    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Color\",\"columnProperty\": {}},{\"columnId\": \"Total Discount\",\"columnProperty\": {}},{\"columnId\": \"Total Quantity\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"0ab92778-3f4c-4055-bd99-83cd017ec72f\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Quantity\"],\"isOpposite\": false}},{\"id\": \"10a6cad2-39f1-49dc-acac-6ac6e4d38953\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Total Discount\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Quantity\",\"color\": \"#06BF7F\"}]}"
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Total Discount\",\"columnProperty\": {}},{\"columnId\": \"Total Quantity\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"0cbdd307-7dcb-4e10-a1e6-e918dd3f3d63\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Discount\"],\"isOpposite\": false}},{\"id\": \"c7dd1c4b-b91b-46b4-b4bb-6542564488fa\",\"properties\": {\"axisType\": \"X\"}}],\"systemSeriesColors\": [{\"serieName\": \"Total Quantity\",\"color\": \"#06BF7F\"}]}"
   display_mode: CHART_MODE
