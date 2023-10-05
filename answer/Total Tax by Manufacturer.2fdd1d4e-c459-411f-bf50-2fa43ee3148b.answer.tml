@@ -1,0 +1,35 @@
+guid: 2fdd1d4e-c459-411f-bf50-2fa43ee3148b
+answer:
+  name: Total Tax by Manufacturer
+  tables:
+  - id: Parameters WS
+    name: Parameters WS
+    fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
+  search_query: "[Tax] [Manufacturer]"
+  answer_columns:
+  - name: Total Tax
+  - name: Manufacturer
+  table:
+    table_columns:
+    - column_id: Manufacturer
+      headline_aggregation: COUNT_DISTINCT
+    - column_id: Total Tax
+      headline_aggregation: SUM
+    ordered_column_ids:
+    - Manufacturer
+    - Total Tax
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+  chart:
+    type: COLUMN
+    chart_columns:
+    - column_id: Manufacturer
+    - column_id: Total Tax
+    axis_configs:
+    - x:
+      - Manufacturer
+      "y":
+      - Total Tax
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Manufacturer\",\"columnProperty\": {}},{\"columnId\": \"Total Tax\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"341d3bcc-f2ce-4980-b61c-1a6c73c74ac6\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Tax\"],\"isOpposite\": false}},{\"id\": \"6188df77-0fb5-4832-979a-06b71a65c30a\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Manufacturer\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Tax\",\"color\": \"#747E8C\"}]}"
+  display_mode: CHART_MODE
