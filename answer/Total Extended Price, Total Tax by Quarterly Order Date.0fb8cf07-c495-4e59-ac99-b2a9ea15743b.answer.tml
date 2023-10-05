@@ -5,12 +5,13 @@ answer:
   - id: Parameters WS
     name: Parameters WS
     fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
-  search_query: "[Order Date] [Order Date].quarterly [Manufacturer] [Extended Price] [Tax]"
+  search_query: "[Order Date] [Order Date].quarterly [Manufacturer] [Extended Price] [Tax] [Org Masked Revenue]"
   answer_columns:
   - name: Quarter(Order Date)
   - name: Manufacturer
   - name: Total Extended Price
   - name: Total Tax
+  - name: Total Org Masked Revenue
   table:
     table_columns:
     - column_id: Quarter(Order Date)
@@ -21,11 +22,14 @@ answer:
       headline_aggregation: SUM
     - column_id: Total Tax
       headline_aggregation: SUM
+    - column_id: Total Org Masked Revenue
+      headline_aggregation: TABLE_AGGR
     ordered_column_ids:
     - Quarter(Order Date)
     - Manufacturer
     - Total Extended Price
     - Total Tax
+    - Total Org Masked Revenue
     client_state: ""
     client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
   chart:
@@ -35,12 +39,14 @@ answer:
     - column_id: Manufacturer
     - column_id: Total Extended Price
     - column_id: Total Tax
+    - column_id: Total Org Masked Revenue
     axis_configs:
     - x:
       - Quarter(Order Date)
       "y":
       - Total Extended Price
       - Total Tax
+      - Total Org Masked Revenue
     client_state: ""
-    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Quarter(Order Date)\",\"columnProperty\": {}},{\"columnId\": \"Manufacturer\",\"columnProperty\": {}},{\"columnId\": \"Total Extended Price\",\"columnProperty\": {}},{\"columnId\": \"Total Tax\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"b72007c4-8608-443d-9015-9c3ae16f0f09\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Extended Price\"],\"isOpposite\": false}},{\"id\": \"026ea8c1-510a-429b-97b1-b3c055990290\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Tax\"],\"isOpposite\": true}},{\"id\": \"98254e96-8383-4896-86dc-0bb37d19885a\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Quarter(Order Date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Extended Price\",\"color\": \"#2E75F0\"},{\"serieName\": \"Total Tax\",\"color\": \"#48D1E0\"}]}"
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Quarter(Order Date)\",\"columnProperty\": {}},{\"columnId\": \"Manufacturer\",\"columnProperty\": {}},{\"columnId\": \"Total Extended Price\",\"columnProperty\": {}},{\"columnId\": \"Total Tax\",\"columnProperty\": {}},{\"columnId\": \"Total Org Masked Revenue\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"ffc2ffe3-0985-43fa-89a4-7c74caca720c\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Extended Price\"],\"isOpposite\": false}},{\"id\": \"6264c41d-dd60-418d-8c06-d234cc1e846e\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Tax\"],\"isOpposite\": true}},{\"id\": \"89379846-1adf-4320-a75a-1d8a149abe84\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Org Masked Revenue\"],\"isOpposite\": true}},{\"id\": \"ba288f5e-6a67-453d-a20d-25e4f9e95a3d\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Quarter(Order Date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Extended Price\",\"color\": \"#2E75F0\"},{\"serieName\": \"Total Tax\",\"color\": \"#48D1E0\"},{\"serieName\": \"Total Org Masked Revenue\",\"color\": \"#8C62F5\"}]}"
   display_mode: CHART_MODE
