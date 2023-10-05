@@ -1,0 +1,42 @@
+guid: 715a1dfa-9d7f-48dc-abc4-e64c69e33b0e
+answer:
+  name: Total Quantity by Total Tax
+  tables:
+  - id: Parameters WS
+    name: Parameters WS
+    fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
+  search_query: "[Tax] [Quantity] [Color]"
+  answer_columns:
+  - name: Total Tax
+  - name: Total Quantity
+  - name: Color
+  table:
+    table_columns:
+    - column_id: Color
+      headline_aggregation: COUNT_DISTINCT
+    - column_id: Total Tax
+      headline_aggregation: SUM
+    - column_id: Total Quantity
+      headline_aggregation: SUM
+    ordered_column_ids:
+    - Color
+    - Total Tax
+    - Total Quantity
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+  chart:
+    type: SCATTER
+    chart_columns:
+    - column_id: Color
+    - column_id: Total Tax
+    - column_id: Total Quantity
+    axis_configs:
+    - x:
+      - Total Tax
+      "y":
+      - Total Quantity
+      category:
+      - Color
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Color\",\"columnProperty\": {}},{\"columnId\": \"Total Tax\",\"columnProperty\": {}},{\"columnId\": \"Total Quantity\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"15387698-f7e9-43b5-9dd8-fe07c7c671d3\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Quantity\"],\"isOpposite\": false}},{\"id\": \"f1f4a259-11f9-4aa5-960a-da8dc7928ac1\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Total Tax\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Quantity\",\"color\": \"#747E8C\"}]}"
+  display_mode: CHART_MODE
