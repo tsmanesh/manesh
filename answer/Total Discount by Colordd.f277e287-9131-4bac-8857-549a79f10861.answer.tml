@@ -1,6 +1,6 @@
 guid: f277e287-9131-4bac-8857-549a79f10861
 answer:
-  name: Total Discount by Color
+  name: Total Discount by Colordd
   tables:
   - id: Parameters WS
     name: Parameters WS
