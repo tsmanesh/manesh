@@ -1,0 +1,28 @@
+guid: 536bc89f-2fa2-4737-bbbb-e586265b2ae5
+answer:
+  name: Quarterly Order Date
+  tables:
+  - id: Parameters WS
+    name: Parameters WS
+    fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
+  search_query: "[Order Date] [Order Date].quarterly"
+  answer_columns:
+  - name: Quarter(Order Date)
+  table:
+    table_columns:
+    - column_id: Quarter(Order Date)
+      headline_aggregation: MIN-MAX
+    ordered_column_ids:
+    - Quarter(Order Date)
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+  chart:
+    type: KPI
+    chart_columns:
+    - column_id: Quarter(Order Date)
+    axis_configs:
+    - "y":
+      - Quarter(Order Date)
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Quarter(Order Date)\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"8fa46474-e97c-413a-9bfd-97d9e77857af\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Quarter(Order Date)\"],\"isOpposite\": false}},{\"id\": \"f5be3ada-bddf-4b34-9755-4cbb0ead1a5f\",\"properties\": {\"axisType\": \"X\"}}]}"
+  display_mode: TABLE_MODE
