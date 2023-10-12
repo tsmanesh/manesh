@@ -25,17 +25,18 @@ answer:
     client_state: ""
     client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
   chart:
-    type: STACKED_COLUMN
+    type: SCATTER
     chart_columns:
     - column_id: Color
     - column_id: Total Discount
     - column_id: Total Quantity
     axis_configs:
     - x:
-      - Color
-      "y":
       - Total Discount
+      "y":
       - Total Quantity
+      category:
+      - Color
     client_state: ""
-    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Color\",\"columnProperty\": {}},{\"columnId\": \"Total Discount\",\"columnProperty\": {}},{\"columnId\": \"Total Quantity\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"511c9d2f-517c-421f-bcc6-1d8e4c3ff3dd\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Discount\",\"Total Quantity\"],\"isOpposite\": false}},{\"id\": \"e4a4a36b-7481-43ab-96ee-c878c601c1c8\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Color\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Quantity\",\"color\": \"#8C62F5\"},{\"serieName\": \"Total Discount\",\"color\": \"#48D1E0\"}]}"
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Color\",\"columnProperty\": {}},{\"columnId\": \"Total Discount\",\"columnProperty\": {}},{\"columnId\": \"Total Quantity\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"fc000ecd-676e-4dd1-993c-4fd554a3388a\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Quantity\"],\"isOpposite\": false}},{\"id\": \"ae41bbaa-7ccb-488e-9eb1-627f6eec5b79\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Total Discount\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Quantity\",\"color\": \"#8C62F5\"}],\"tooltipConfig\": {}}"
   display_mode: CHART_MODE
