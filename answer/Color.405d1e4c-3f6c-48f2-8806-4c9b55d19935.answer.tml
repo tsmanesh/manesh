@@ -5,24 +5,29 @@ answer:
   - id: Parameters WS
     name: Parameters WS
     fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
-  search_query: "[Color]"
+  search_query: "[Color] [Tax]"
   answer_columns:
   - name: Color
+  - name: Total Tax
   table:
     table_columns:
     - column_id: Color
       headline_aggregation: COUNT_DISTINCT
+    - column_id: Total Tax
+      headline_aggregation: SUM
     ordered_column_ids:
     - Color
+    - Total Tax
     client_state: ""
     client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
   chart:
     type: KPI
     chart_columns:
     - column_id: Color
+    - column_id: Total Tax
     axis_configs:
     - "y":
       - Color
     client_state: ""
-    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Color\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"4d947802-89fc-4b66-b5e7-e1e247438e12\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Color\"],\"isOpposite\": false}},{\"id\": \"ce64ab9b-24b7-42ef-9f79-73a03114b955\",\"properties\": {\"axisType\": \"X\"}}],\"tooltipConfig\": {}}"
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Color\",\"columnProperty\": {}},{\"columnId\": \"Total Tax\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"4d947802-89fc-4b66-b5e7-e1e247438e12\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Color\"],\"isOpposite\": false}},{\"id\": \"ce64ab9b-24b7-42ef-9f79-73a03114b955\",\"properties\": {\"axisType\": \"X\"}}],\"tooltipConfig\": {}}"
   display_mode: TABLE_MODE
