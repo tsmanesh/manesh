@@ -1,0 +1,42 @@
+guid: 905dacaa-1976-48ff-9312-477094d223bd
+answer:
+  name: Total Extended Price by Total Discount
+  tables:
+  - id: Parameters WS
+    name: Parameters WS
+    fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
+  search_query: "[Color] [Discount] [Extended Price]"
+  answer_columns:
+  - name: Color
+  - name: Total Discount
+  - name: Total Extended Price
+  table:
+    table_columns:
+    - column_id: Color
+      headline_aggregation: COUNT_DISTINCT
+    - column_id: Total Discount
+      headline_aggregation: SUM
+    - column_id: Total Extended Price
+      headline_aggregation: SUM
+    ordered_column_ids:
+    - Color
+    - Total Discount
+    - Total Extended Price
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+  chart:
+    type: SCATTER
+    chart_columns:
+    - column_id: Color
+    - column_id: Total Discount
+    - column_id: Total Extended Price
+    axis_configs:
+    - x:
+      - Total Discount
+      "y":
+      - Total Extended Price
+      category:
+      - Color
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Color\",\"columnProperty\": {}},{\"columnId\": \"Total Discount\",\"columnProperty\": {}},{\"columnId\": \"Total Extended Price\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"4ec6d71c-01a1-4b79-be58-562bc23500e1\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Extended Price\"],\"isOpposite\": false}},{\"id\": \"5e41f7b7-2a02-410d-80c9-43132e457327\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Total Discount\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Extended Price\",\"color\": \"#2E75F0\"}]}"
+  display_mode: CHART_MODE
