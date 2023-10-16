@@ -1,0 +1,28 @@
+guid: 3a491e70-0d94-46c9-8b3d-1d3928b34241
+answer:
+  name: Color
+  tables:
+  - id: Parameters WS
+    name: Parameters WS
+    fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
+  search_query: "[Color]"
+  answer_columns:
+  - name: Color
+  table:
+    table_columns:
+    - column_id: Color
+      headline_aggregation: COUNT_DISTINCT
+    ordered_column_ids:
+    - Color
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+  chart:
+    type: KPI
+    chart_columns:
+    - column_id: Color
+    axis_configs:
+    - "y":
+      - Color
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Color\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"b61a987d-f9de-4e20-9e6d-cd932b95535b\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Color\"],\"isOpposite\": false}},{\"id\": \"d42c43de-0eb6-44a3-8e28-873354d5ff1c\",\"properties\": {\"axisType\": \"X\"}}]}"
+  display_mode: TABLE_MODE
