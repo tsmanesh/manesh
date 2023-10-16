@@ -1,0 +1,28 @@
+guid: 3d017f05-c9c8-4238-af86-f21fed0a228d
+answer:
+  name: Total Revenue
+  tables:
+  - id: Parameters WS
+    name: Parameters WS
+    fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
+  search_query: "[Revenue]"
+  answer_columns:
+  - name: Total Revenue
+  table:
+    table_columns:
+    - column_id: Total Revenue
+      headline_aggregation: SUM
+    ordered_column_ids:
+    - Total Revenue
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+  chart:
+    type: KPI
+    chart_columns:
+    - column_id: Total Revenue
+    axis_configs:
+    - "y":
+      - Total Revenue
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Total Revenue\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"894fda0e-da8a-45db-8bfc-6ae7e4de0f33\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Revenue\"],\"isOpposite\": false}},{\"id\": \"5ce9fced-d0a0-479a-856a-72ad491de329\",\"properties\": {\"axisType\": \"X\"}}]}"
+  display_mode: CHART_MODE
