@@ -1,0 +1,42 @@
+guid: 70e9ee96-8856-48d3-b61a-0dc3c08bc8dc
+answer:
+  name: Total
+  tables:
+  - id: Parameters WS
+    name: Parameters WS
+    fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
+  search_query: "[Color] [Discount] [Quantity]"
+  answer_columns:
+  - name: Color
+  - name: Total Discount
+  - name: Total Quantity
+  table:
+    table_columns:
+    - column_id: Color
+      headline_aggregation: COUNT_DISTINCT
+    - column_id: Total Discount
+      headline_aggregation: SUM
+    - column_id: Total Quantity
+      headline_aggregation: SUM
+    ordered_column_ids:
+    - Color
+    - Total Discount
+    - Total Quantity
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+  chart:
+    type: SCATTER
+    chart_columns:
+    - column_id: Color
+    - column_id: Total Discount
+    - column_id: Total Quantity
+    axis_configs:
+    - x:
+      - Total Discount
+      "y":
+      - Total Quantity
+      category:
+      - Color
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Color\",\"columnProperty\": {}},{\"columnId\": \"Total Discount\",\"columnProperty\": {}},{\"columnId\": \"Total Quantity\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"3ba0cd09-8b55-44c0-845b-20dabb07f683\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Quantity\"],\"isOpposite\": false}},{\"id\": \"31897110-d4f6-4ddd-a4d4-0361cd193665\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Total Discount\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Quantity\",\"color\": \"#FF8142\"}]}"
+  display_mode: CHART_MODE
