@@ -21,7 +21,7 @@ answer:
     client_state: ""
     client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
   chart:
-    type: PIE
+    type: KPI
     chart_columns:
     - column_id: Quarter(Commit Date)
     - column_id: Total Discount
@@ -31,5 +31,5 @@ answer:
       "y":
       - Total Discount
     client_state: ""
-    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Quarter(Commit Date)\",\"columnProperty\": {}},{\"columnId\": \"Total Discount\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"2d3a9a5b-a557-45c7-ae01-e23fd178ddc1\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Discount\"],\"isOpposite\": false}},{\"id\": \"63fd6edf-68c3-4e44-b4b3-23c2152639ef\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Quarter(Commit Date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Discount\",\"color\": \"#2770ef\"},{\"serieName\": \"q1 1992\",\"color\": \"#A2ACBA\"},{\"serieName\": \"q2 1992\",\"color\": \"#47515F\"},{\"serieName\": \"q3 1992\",\"color\": \"#BEC6D0\"},{\"serieName\": \"q4 1992\",\"color\": \"#747E8C\"},{\"serieName\": \"q1 1993\",\"color\": \"#FFA97E\"},{\"serieName\": \"q2 1993\",\"color\": \"#C26232\"},{\"serieName\": \"q3 1993\",\"color\": \"#FFCCB3\"},{\"serieName\": \"q4 1993\",\"color\": \"#FF8142\"},{\"serieName\": \"q1 1994\",\"color\": \"#B094F8\"},{\"serieName\": \"q2 1994\",\"color\": \"#6A4ABA\"},{\"serieName\": \"q3 1994\",\"color\": \"#D1C0FB\"},{\"serieName\": \"q4 1994\",\"color\": \"#8C62F5\"},{\"serieName\": \"q1 1995\",\"color\": \"#56D3A8\"},{\"serieName\": \"q2 1995\",\"color\": \"#049160\"},{\"serieName\": \"q3 1995\",\"color\": \"#9BE5CB\"},{\"serieName\": \"q4 1995\",\"color\": \"#06BF7F\"},{\"serieName\": \"q1 1996\",\"color\": \"#FCD977\"},{\"serieName\": \"q2 1996\",\"color\": \"#BF982A\"},{\"serieName\": \"q3 1996\",\"color\": \"#FDE9AF\"},{\"serieName\": \"q4 1996\",\"color\": \"#FCC838\"},{\"serieName\": \"q1 1997\",\"color\": \"#82DFE9\"},{\"serieName\": \"q2 1997\",\"color\": \"#369FAA\"},{\"serieName\": \"q3 1997\",\"color\": \"#B5ECF2\"},{\"serieName\": \"q4 1997\",\"color\": \"#48D1E0\"},{\"serieName\": \"q1 1998\",\"color\": \"#71A1F4\"},{\"serieName\": \"q2 1998\",\"color\": \"#2359B6\"},{\"serieName\": \"q3 1998\",\"color\": \"#ABC7F9\"},{\"serieName\": \"q4 1998\",\"color\": \"#2E75F0\"}]}"
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Quarter(Commit Date)\",\"columnProperty\": {}},{\"columnId\": \"Total Discount\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"2d3a9a5b-a557-45c7-ae01-e23fd178ddc1\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Discount\"],\"isOpposite\": false}},{\"id\": \"63fd6edf-68c3-4e44-b4b3-23c2152639ef\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Quarter(Commit Date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Discount\",\"color\": \"#2770ef\"}],\"tooltipConfig\": {}}"
   display_mode: CHART_MODE
