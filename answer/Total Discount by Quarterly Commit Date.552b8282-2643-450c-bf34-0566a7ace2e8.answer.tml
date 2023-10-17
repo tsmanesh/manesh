@@ -1,0 +1,40 @@
+guid: 552b8282-2643-450c-bf34-0566a7ace2e8
+answer:
+  name: Total Discount by Quarterly Commit Date
+  tables:
+  - id: Parameters WS
+    name: Parameters WS
+    fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
+  search_query: "[Color] [Discount] [Commit Date] [Commit Date].quarterly"
+  answer_columns:
+  - name: Color
+  - name: Total Discount
+  - name: Quarter(Commit Date)
+  table:
+    table_columns:
+    - column_id: Color
+      headline_aggregation: COUNT_DISTINCT
+    - column_id: Quarter(Commit Date)
+      headline_aggregation: MIN-MAX
+    - column_id: Total Discount
+      headline_aggregation: SUM
+    ordered_column_ids:
+    - Color
+    - Quarter(Commit Date)
+    - Total Discount
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+  chart:
+    type: LINE
+    chart_columns:
+    - column_id: Color
+    - column_id: Quarter(Commit Date)
+    - column_id: Total Discount
+    axis_configs:
+    - x:
+      - Quarter(Commit Date)
+      "y":
+      - Total Discount
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Color\",\"columnProperty\": {}},{\"columnId\": \"Quarter(Commit Date)\",\"columnProperty\": {}},{\"columnId\": \"Total Discount\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"6b1c61e2-59bf-4fc3-b7b7-ca2331455ac6\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Discount\"],\"isOpposite\": false}},{\"id\": \"038ce685-a5f0-4b80-b9fc-7b3ae04178c2\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Quarter(Commit Date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Discount\",\"color\": \"#06BF7F\"}]}"
+  display_mode: CHART_MODE
