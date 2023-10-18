@@ -1,0 +1,35 @@
+guid: 5de22b2c-d87a-4c1f-a659-4999b1241253
+answer:
+  name: Total Discount by Quarterly Commit Date
+  tables:
+  - id: Parameters WS
+    name: Parameters WS
+    fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
+  search_query: "[Commit Date] [Commit Date].quarterly [Discount]"
+  answer_columns:
+  - name: Quarter(Commit Date)
+  - name: Total Discount
+  table:
+    table_columns:
+    - column_id: Quarter(Commit Date)
+      headline_aggregation: MIN-MAX
+    - column_id: Total Discount
+      headline_aggregation: SUM
+    ordered_column_ids:
+    - Quarter(Commit Date)
+    - Total Discount
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+  chart:
+    type: KPI
+    chart_columns:
+    - column_id: Quarter(Commit Date)
+    - column_id: Total Discount
+    axis_configs:
+    - x:
+      - Quarter(Commit Date)
+      "y":
+      - Total Discount
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Quarter(Commit Date)\",\"columnProperty\": {}},{\"columnId\": \"Total Discount\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"cc389235-0e61-4851-96a5-55b444e4fa7d\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Discount\"],\"isOpposite\": false}},{\"id\": \"e6dc698e-f652-4aab-98f3-38adecbbf732\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Quarter(Commit Date)\"]}}]}"
+  display_mode: CHART_MODE
