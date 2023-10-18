@@ -5,25 +5,30 @@ answer:
   - id: Parameters WS
     name: Parameters WS
     fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
-  search_query: "[Revenue] [Commit Date] [Commit Date].quarterly"
+  search_query: "[Revenue] [Commit Date] [Commit Date].quarterly [Ship Mode]"
   answer_columns:
   - name: Total Revenue
   - name: Quarter(Commit Date)
+  - name: Ship Mode
   table:
     table_columns:
     - column_id: Quarter(Commit Date)
       headline_aggregation: MIN-MAX
+    - column_id: Ship Mode
+      headline_aggregation: COUNT_DISTINCT
     - column_id: Total Revenue
       headline_aggregation: SUM
     ordered_column_ids:
     - Quarter(Commit Date)
+    - Ship Mode
     - Total Revenue
     client_state: ""
     client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
   chart:
-    type: LINE
+    type: STACKED_COLUMN
     chart_columns:
     - column_id: Quarter(Commit Date)
+    - column_id: Ship Mode
     - column_id: Total Revenue
     axis_configs:
     - x:
@@ -31,5 +36,5 @@ answer:
       "y":
       - Total Revenue
     client_state: ""
-    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}},\"showStackedLabels\": true,\"allLabels\": true},\"columnProperties\": [{\"columnId\": \"Quarter(Commit Date)\",\"columnProperty\": {}},{\"columnId\": \"Total Revenue\",\"columnProperty\": {\"dataLabels\": true}}],\"axisProperties\": [{\"id\": \"abcd9ec9-9c08-4882-b350-cd4d35836bea\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Revenue\"],\"isOpposite\": false}},{\"id\": \"65e8ccf4-9eb6-447c-b18b-36e2f327a844\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Quarter(Commit Date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Revenue\",\"color\": \"#06BF7F\"}],\"customColorSelectorArray\": [\"#06BF7F\",\"#BF982A\",\"#F04152\",\"#747E8C\"]}"
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}},\"showStackedLabels\": true,\"allLabels\": true},\"columnProperties\": [{\"columnId\": \"Quarter(Commit Date)\",\"columnProperty\": {}},{\"columnId\": \"Total Revenue\",\"columnProperty\": {\"dataLabels\": true}},{\"columnId\": \"Ship Mode\",\"columnProperty\": {\"dataLabels\": true}}],\"axisProperties\": [{\"id\": \"423571d8-22e9-41f8-b10b-dc6c18d25693\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Revenue\"],\"isOpposite\": false}},{\"id\": \"4668435d-6abd-455a-a1f6-607255ed6366\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Quarter(Commit Date)\"]}}],\"customColorSelectorArray\": [\"#06BF7F\",\"#BF982A\",\"#F04152\",\"#747E8C\"]}"
   display_mode: CHART_MODE
