@@ -1,0 +1,35 @@
+guid: db213e64-c484-441c-a519-f483d7f9451f
+answer:
+  name: "Quarterly Commit Date, Ship Mode"
+  tables:
+  - id: Parameters WS
+    name: Parameters WS
+    fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
+  search_query: "[Commit Date] [Commit Date].quarterly [Ship Mode]"
+  answer_columns:
+  - name: Quarter(Commit Date)
+  - name: Ship Mode
+  table:
+    table_columns:
+    - column_id: Quarter(Commit Date)
+      headline_aggregation: MIN-MAX
+    - column_id: Ship Mode
+      headline_aggregation: COUNT_DISTINCT
+    ordered_column_ids:
+    - Quarter(Commit Date)
+    - Ship Mode
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+  chart:
+    type: SCATTER
+    chart_columns:
+    - column_id: Quarter(Commit Date)
+    - column_id: Ship Mode
+    axis_configs:
+    - x:
+      - Quarter(Commit Date)
+      "y":
+      - Ship Mode
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Quarter(Commit Date)\",\"columnProperty\": {}},{\"columnId\": \"Ship Mode\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"bdd023ae-8617-4891-8306-725232e8acaf\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Ship Mode\"],\"isOpposite\": false}},{\"id\": \"e7cfb40c-dfa6-45e0-a083-4cc79b6d8afb\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Quarter(Commit Date)\"]}}]}"
+  display_mode: TABLE_MODE
