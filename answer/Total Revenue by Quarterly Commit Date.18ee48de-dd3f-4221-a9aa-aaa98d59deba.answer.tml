@@ -5,38 +5,24 @@ answer:
   - id: Parameters WS
     name: Parameters WS
     fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
-  search_query: "[Revenue] [Commit Date] [Commit Date].quarterly [Ship Mode]"
+  search_query: "[Discount]"
   answer_columns:
-  - name: Total Revenue
-  - name: Quarter(Commit Date)
-  - name: Ship Mode
+  - name: Total Discount
   table:
     table_columns:
-    - column_id: Quarter(Commit Date)
-      headline_aggregation: MIN-MAX
-    - column_id: Ship Mode
-      headline_aggregation: COUNT_DISTINCT
-    - column_id: Total Revenue
+    - column_id: Total Discount
       headline_aggregation: SUM
     ordered_column_ids:
-    - Quarter(Commit Date)
-    - Ship Mode
-    - Total Revenue
+    - Total Discount
     client_state: ""
     client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
   chart:
-    type: STACKED_COLUMN
+    type: KPI
     chart_columns:
-    - column_id: Quarter(Commit Date)
-    - column_id: Ship Mode
-    - column_id: Total Revenue
+    - column_id: Total Discount
     axis_configs:
-    - x:
-      - Quarter(Commit Date)
-      "y":
-      - Total Revenue
-      color:
-      - Ship Mode
+    - "y":
+      - Total Discount
     client_state: ""
-    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}},\"showStackedLabels\": true,\"allLabels\": true},\"columnProperties\": [{\"columnId\": \"Quarter(Commit Date)\",\"columnProperty\": {\"dataLabels\": true}},{\"columnId\": \"Total Revenue\",\"columnProperty\": {\"dataLabels\": true}},{\"columnId\": \"Ship Mode\",\"columnProperty\": {\"dataLabels\": true}}],\"axisProperties\": [{\"id\": \"423571d8-22e9-41f8-b10b-dc6c18d25693\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Revenue\"],\"isOpposite\": false}},{\"id\": \"4668435d-6abd-455a-a1f6-607255ed6366\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Quarter(Commit Date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Revenue\",\"color\": \"#FCC838\"}],\"customColorSelectorArray\": [\"#06BF7F\",\"#BF982A\",\"#F04152\",\"#747E8C\"]}"
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}},\"showStackedLabels\": true,\"allLabels\": true},\"columnProperties\": [{\"columnId\": \"Total Discount\",\"columnProperty\": {\"dataLabels\": true}}],\"axisProperties\": [{\"id\": \"db091682-dd84-4635-b104-cec7b6c4132c\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Discount\"],\"isOpposite\": false}},{\"id\": \"3107c07f-2900-4c9c-b941-2fba34e5171f\",\"properties\": {\"axisType\": \"X\"}}],\"systemSeriesColors\": [{\"serieName\": \"c5fcab2f-3e3c-4f54-be33-6260aa026a90\",\"color\": \"#FCC838\"}],\"customColorSelectorArray\": [\"#06BF7F\",\"#BF982A\",\"#F04152\",\"#747E8C\"]}"
   display_mode: CHART_MODE
