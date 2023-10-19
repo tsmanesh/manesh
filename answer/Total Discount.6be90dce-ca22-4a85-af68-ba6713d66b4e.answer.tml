@@ -1,0 +1,28 @@
+guid: 6be90dce-ca22-4a85-af68-ba6713d66b4e
+answer:
+  name: Total Discount
+  tables:
+  - id: Parameters WS
+    name: Parameters WS
+    fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
+  search_query: "[Discount]"
+  answer_columns:
+  - name: Total Discount
+  table:
+    table_columns:
+    - column_id: Total Discount
+      headline_aggregation: SUM
+    ordered_column_ids:
+    - Total Discount
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+  chart:
+    type: KPI
+    chart_columns:
+    - column_id: Total Discount
+    axis_configs:
+    - "y":
+      - Total Discount
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Total Discount\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"e440aa62-b4bc-48ed-981f-7023cfcb949c\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Discount\"],\"isOpposite\": false}},{\"id\": \"d4e167db-6bf2-49dd-a506-06d6f4854ce5\",\"properties\": {\"axisType\": \"X\"}}]}"
+  display_mode: CHART_MODE
