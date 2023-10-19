@@ -1,0 +1,42 @@
+guid: 2320fd1b-ce69-4b6c-b4dc-1cb475f58d9a
+answer:
+  name: Total Discount by Quarterly Commit Date and Ship Mode
+  tables:
+  - id: Parameters WS
+    name: Parameters WS
+    fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
+  search_query: "[Commit Date] [Commit Date].quarterly [Ship Mode] [Discount]"
+  answer_columns:
+  - name: Quarter(Commit Date)
+  - name: Ship Mode
+  - name: Total Discount
+  table:
+    table_columns:
+    - column_id: Quarter(Commit Date)
+      headline_aggregation: MIN-MAX
+    - column_id: Ship Mode
+      headline_aggregation: COUNT_DISTINCT
+    - column_id: Total Discount
+      headline_aggregation: SUM
+    ordered_column_ids:
+    - Quarter(Commit Date)
+    - Ship Mode
+    - Total Discount
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+  chart:
+    type: LINE
+    chart_columns:
+    - column_id: Quarter(Commit Date)
+    - column_id: Ship Mode
+    - column_id: Total Discount
+    axis_configs:
+    - x:
+      - Quarter(Commit Date)
+      "y":
+      - Total Discount
+      color:
+      - Ship Mode
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Quarter(Commit Date)\",\"columnProperty\": {}},{\"columnId\": \"Ship Mode\",\"columnProperty\": {}},{\"columnId\": \"Total Discount\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"64885c71-4d0c-489a-898f-81851eb78e40\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Discount\"],\"isOpposite\": false}},{\"id\": \"82a65c06-6160-4609-aa5a-7478886ffaac\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Quarter(Commit Date)\"]}}]}"
+  display_mode: CHART_MODE
