@@ -1,0 +1,28 @@
+guid: 5aa91bab-165b-4d55-a515-8f827dbd654a
+answer:
+  name: Quarterly Commit Date
+  tables:
+  - id: Parameters WS
+    name: Parameters WS
+    fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
+  search_query: "[Commit Date] [Commit Date].quarterly"
+  answer_columns:
+  - name: Quarter(Commit Date)
+  table:
+    table_columns:
+    - column_id: Quarter(Commit Date)
+      headline_aggregation: MIN-MAX
+    ordered_column_ids:
+    - Quarter(Commit Date)
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+  chart:
+    type: KPI
+    chart_columns:
+    - column_id: Quarter(Commit Date)
+    axis_configs:
+    - "y":
+      - Quarter(Commit Date)
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Quarter(Commit Date)\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"1c1c004c-078e-449d-89a0-b086a9a0b399\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Quarter(Commit Date)\"],\"isOpposite\": false}},{\"id\": \"0425b6a5-9cbd-4a55-9367-e70e2e25787d\",\"properties\": {\"axisType\": \"X\"}}]}"
+  display_mode: TABLE_MODE
