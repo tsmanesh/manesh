@@ -1,0 +1,35 @@
+guid: d3f66634-e15e-4a4a-a38c-1c6ca0181e2e
+answer:
+  name: Total Revenue by Quarterly Commit Date
+  tables:
+  - id: Parameters WS
+    name: Parameters WS
+    fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
+  search_query: "[Revenue] [Commit Date] [Commit Date].quarterly"
+  answer_columns:
+  - name: Total Revenue
+  - name: Quarter(Commit Date)
+  table:
+    table_columns:
+    - column_id: Quarter(Commit Date)
+      headline_aggregation: MIN-MAX
+    - column_id: Total Revenue
+      headline_aggregation: SUM
+    ordered_column_ids:
+    - Quarter(Commit Date)
+    - Total Revenue
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+  chart:
+    type: KPI
+    chart_columns:
+    - column_id: Quarter(Commit Date)
+    - column_id: Total Revenue
+    axis_configs:
+    - x:
+      - Quarter(Commit Date)
+      "y":
+      - Total Revenue
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Quarter(Commit Date)\",\"columnProperty\": {}},{\"columnId\": \"Total Revenue\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"009e8be1-5b3e-46ca-851f-10e6b5ed06d7\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Revenue\"],\"isOpposite\": false}},{\"id\": \"2ed1c884-7c67-4938-a704-3e32c24fafd0\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Quarter(Commit Date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Revenue\",\"color\": \"#2770ef\"}]}"
+  display_mode: CHART_MODE
