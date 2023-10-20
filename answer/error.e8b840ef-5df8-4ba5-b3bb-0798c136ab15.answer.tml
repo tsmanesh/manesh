@@ -8,7 +8,7 @@ answer:
   formulas:
   - id: fn
     name: fn
-    expr: "add_years ( [Commit Date] , [Tax] ) != 01/11/2014 "
+    expr: "add_years ( [Commit Date] , [Tax] ) < [Commit Date] "
     was_auto_generated: false
   search_query: "[Commit Date] [Commit Date].monthly [Discount] [fn] [fn].monthly"
   answer_columns:
