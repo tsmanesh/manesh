@@ -37,7 +37,7 @@ answer:
     client_state: ""
     client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
   chart:
-    type: PIE
+    type: COLUMN
     chart_columns:
     - column_id: Quarter(Order Date)
     - column_id: Brand1
@@ -54,5 +54,5 @@ answer:
       - Total Quantity
       - Total Extended Price
     client_state: ""
-    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Quarter(Order Date)\",\"columnProperty\": {}},{\"columnId\": \"Brand1\",\"columnProperty\": {}},{\"columnId\": \"Part Partkey\",\"columnProperty\": {}},{\"columnId\": \"Quarter(Commit Date)\",\"columnProperty\": {}},{\"columnId\": \"Total Quantity\",\"columnProperty\": {}},{\"columnId\": \"Total Extended Price\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"bccff094-9d24-4624-acea-4a1b71904d23\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Quantity\"],\"isOpposite\": false}},{\"id\": \"b8e9f929-7872-424c-ad7f-29cadbb1a491\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Extended Price\"],\"isOpposite\": true}},{\"id\": \"c4727594-9e0c-428e-a438-df08d65d4ef5\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Brand1\",\"Part Partkey\",\"Quarter(Order Date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Quantity\",\"color\": \"#48D1E0\"},{\"serieName\": \"Total Extended Price\",\"color\": \"#2E75F0\"}]}"
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Quarter(Order Date)\",\"columnProperty\": {}},{\"columnId\": \"Brand1\",\"columnProperty\": {}},{\"columnId\": \"Part Partkey\",\"columnProperty\": {}},{\"columnId\": \"Quarter(Commit Date)\",\"columnProperty\": {}},{\"columnId\": \"Total Quantity\",\"columnProperty\": {}},{\"columnId\": \"Total Extended Price\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"bccff094-9d24-4624-acea-4a1b71904d23\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Quantity\"],\"isOpposite\": false}},{\"id\": \"b8e9f929-7872-424c-ad7f-29cadbb1a491\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Extended Price\"],\"isOpposite\": true}},{\"id\": \"c4727594-9e0c-428e-a438-df08d65d4ef5\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Brand1\",\"Part Partkey\",\"Quarter(Order Date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Quantity\",\"color\": \"#48D1E0\"},{\"serieName\": \"Total Extended Price\",\"color\": \"#2E75F0\"}],\"tooltipConfig\": {}}"
   display_mode: CHART_MODE
