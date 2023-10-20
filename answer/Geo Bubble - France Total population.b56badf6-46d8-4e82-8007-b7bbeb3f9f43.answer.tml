@@ -1,0 +1,43 @@
+guid: b56badf6-46d8-4e82-8007-b7bbeb3f9f43
+answer:
+  name: Geo Bubble - France Total population
+  description: France Total population by department INSEE code and region
+  tables:
+  - id: geo_france_population_data
+    name: geo_france_population_data
+    fqn: d03499fb-14bd-4f07-9907-d5444b8ce905
+  search_query: "[population] [department INSEE code] [region]"
+  answer_columns:
+  - name: Total population
+  - name: department INSEE code
+  - name: region
+  table:
+    table_columns:
+    - column_id: department INSEE code
+      headline_aggregation: COUNT_DISTINCT
+    - column_id: region
+      headline_aggregation: COUNT_DISTINCT
+    - column_id: Total population
+      headline_aggregation: SUM
+    ordered_column_ids:
+    - department INSEE code
+    - region
+    - Total population
+    client_state: "{\"dataOffset\":0.0,\"wrapTableHeader\":true}"
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"wrapTableHeader\": true,\"columnProperties\": [{\"columnId\": \"department INSEE code\",\"columnProperty\": {}},{\"columnId\": \"region\",\"columnProperty\": {}},{\"columnId\": \"Total population\",\"columnProperty\": {}}]}"
+  chart:
+    type: GEO_BUBBLE
+    chart_columns:
+    - column_id: department INSEE code
+    - column_id: region
+    - column_id: Total population
+    axis_configs:
+    - x:
+      - department INSEE code
+      "y":
+      - Total population
+      color:
+      - region
+    client_state: "{\"systemMultiColorSeriesColors\":{\"Total population\":{\"department INSEE code\":[\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}},\"mapViewport\":{\"zoomLevel\":5.0,\"center\":[246536.21497386607,5851797.093609585]},\"chartProperties\":{\"gridLines\":{},\"showRoundedNumbers\":true,\"chartSpecific\":{},\"mapviewport\":{\"zoomLevel\":6.0,\"center\":[298200.9512945496,5851821.856702076]}},\"axisProperties\":{\"1043b4a4-80c5-4c46-97c8-e9afc2651375\":{\"linkedColumns\":[\"Total population\"],\"axisType\":\"Y\",\"isOpposite\":false},\"351a8fca-f8e0-48b7-93ee-9473863d727b\":{\"linkedColumns\":[\"department INSEE code\"],\"axisType\":\"X\"}},\"systemSeriesColors\":{\"Total population\":\"#e3394a\",\"auvergne-rhône-alpes\":\"#e3394a\",\"brittany\":\"#4074b3\",\"burgundy-franche-comté\":\"#35b06e\",\"centre-val de loire\":\"#68b8e3\",\"corsica\":\"#ff833b\",\"grand-est\":\"#9667b8\",\"hauts-de-france\":\"#f5cb4e\",\"new aquitaine\":\"#e3394a\",\"normandy\":\"#4074b3\",\"occitania\":\"#35b06e\",\"pays de la loire\":\"#68b8e3\",\"provence-alpes-côte d\\u0027azur\":\"#ff833b\",\"île-de-france\":\"#9667b8\"},\"yAxisShared\":false,\"version\":\"V2.1\",\"columnProperties\":{\"department INSEE code\":{},\"region\":{},\"Total population\":{}}}"
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"mapviewport\": {\"center\": [298200.95129454974,5851821.856702076],\"zoomLevel\": 5.7730270312739576,\"extent\": [-1373629.7313588252,4925730.716567887,1970031.6339479247,6777912.996836266]},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"department INSEE code\",\"columnProperty\": {}},{\"columnId\": \"region\",\"columnProperty\": {}},{\"columnId\": \"Total population\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"1043b4a4-80c5-4c46-97c8-e9afc2651375\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total population\"],\"isOpposite\": false}},{\"id\": \"351a8fca-f8e0-48b7-93ee-9473863d727b\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"department INSEE code\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total population\",\"color\": \"#e3394a\"},{\"serieName\": \"auvergne-rhône-alpes\",\"color\": \"#e3394a\"},{\"serieName\": \"brittany\",\"color\": \"#4074b3\"},{\"serieName\": \"burgundy-franche-comté\",\"color\": \"#35b06e\"},{\"serieName\": \"centre-val de loire\",\"color\": \"#68b8e3\"},{\"serieName\": \"corsica\",\"color\": \"#ff833b\"},{\"serieName\": \"grand-est\",\"color\": \"#9667b8\"},{\"serieName\": \"hauts-de-france\",\"color\": \"#f5cb4e\"},{\"serieName\": \"new aquitaine\",\"color\": \"#e3394a\"},{\"serieName\": \"normandy\",\"color\": \"#4074b3\"},{\"serieName\": \"occitania\",\"color\": \"#35b06e\"},{\"serieName\": \"pays de la loire\",\"color\": \"#68b8e3\"},{\"serieName\": \"provence-alpes-côte d'azur\",\"color\": \"#ff833b\"},{\"serieName\": \"île-de-france\",\"color\": \"#9667b8\"}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"Total population\",\"colorMap\": [{\"serieName\": \"department INSEE code\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
+  display_mode: CHART_MODE
