@@ -1,0 +1,58 @@
+guid: 7902a582-b034-4d81-9515-fb412cdfb7e2
+answer:
+  name: "Total Quantity, Total Extended Price by Brand1, Part Partkey, Quarterly Order Date"
+  tables:
+  - id: Parameters WS
+    name: Parameters WS
+    fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
+  search_query: "[Order Date] [Order Date].quarterly [Brand1] [Part Partkey] [Commit Date] [Commit Date].quarterly [Quantity] [Extended Price]"
+  answer_columns:
+  - name: Quarter(Order Date)
+  - name: Brand1
+  - name: Part Partkey
+  - name: Quarter(Commit Date)
+  - name: Total Quantity
+  - name: Total Extended Price
+  table:
+    table_columns:
+    - column_id: Quarter(Order Date)
+      headline_aggregation: MIN-MAX
+    - column_id: Brand1
+      headline_aggregation: COUNT_DISTINCT
+    - column_id: Part Partkey
+      headline_aggregation: COUNT_DISTINCT
+    - column_id: Quarter(Commit Date)
+      headline_aggregation: MIN-MAX
+    - column_id: Total Quantity
+      headline_aggregation: SUM
+    - column_id: Total Extended Price
+      headline_aggregation: SUM
+    ordered_column_ids:
+    - Quarter(Order Date)
+    - Brand1
+    - Part Partkey
+    - Quarter(Commit Date)
+    - Total Quantity
+    - Total Extended Price
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+  chart:
+    type: COLUMN
+    chart_columns:
+    - column_id: Quarter(Order Date)
+    - column_id: Brand1
+    - column_id: Part Partkey
+    - column_id: Quarter(Commit Date)
+    - column_id: Total Quantity
+    - column_id: Total Extended Price
+    axis_configs:
+    - x:
+      - Brand1
+      - Part Partkey
+      - Quarter(Order Date)
+      "y":
+      - Total Quantity
+      - Total Extended Price
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Quarter(Order Date)\",\"columnProperty\": {}},{\"columnId\": \"Brand1\",\"columnProperty\": {}},{\"columnId\": \"Part Partkey\",\"columnProperty\": {}},{\"columnId\": \"Quarter(Commit Date)\",\"columnProperty\": {}},{\"columnId\": \"Total Quantity\",\"columnProperty\": {}},{\"columnId\": \"Total Extended Price\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"bccff094-9d24-4624-acea-4a1b71904d23\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Quantity\"],\"isOpposite\": false}},{\"id\": \"b8e9f929-7872-424c-ad7f-29cadbb1a491\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Extended Price\"],\"isOpposite\": true}},{\"id\": \"c4727594-9e0c-428e-a438-df08d65d4ef5\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Brand1\",\"Part Partkey\",\"Quarter(Order Date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Quantity\",\"color\": \"#48D1E0\"},{\"serieName\": \"Total Extended Price\",\"color\": \"#2E75F0\"}]}"
+  display_mode: CHART_MODE
