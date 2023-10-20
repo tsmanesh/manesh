@@ -25,7 +25,7 @@ answer:
     client_state: ""
     client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
   chart:
-    type: SANKEY
+    type: HEATMAP
     chart_columns:
     - column_id: Customer_Sector
     - column_id: Employee_ID
@@ -33,9 +33,9 @@ answer:
     axis_configs:
     - x:
       - Customer_Sector
-      - Employee_ID
       "y":
-      - Total Item Review_Rating
+      - Employee_ID
+      size: Total Item Review_Rating
     client_state: ""
-    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Customer_Sector\",\"columnProperty\": {}},{\"columnId\": \"Employee_ID\",\"columnProperty\": {}},{\"columnId\": \"Total Item Review_Rating\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"e2ca55c7-f4c2-4843-8c53-ff70ad78db3c\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Item Review_Rating\"],\"isOpposite\": false}},{\"id\": \"1b6e73f0-d732-42d5-929f-b83b181bd4f9\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Customer_Sector\",\"Employee_ID\"]}}],\"systemSeriesColors\": [{\"serieName\": \"{null}\",\"color\": \"#56D3A8\"},{\"serieName\": \"banking\",\"color\": \"#06BF7F\"},{\"serieName\": \"consulting\",\"color\": \"#FCD977\"},{\"serieName\": \"energy\",\"color\": \"#FCC838\"},{\"serieName\": \"fmcg\",\"color\": \"#82DFE9\"},{\"serieName\": \"others\",\"color\": \"#48D1E0\"},{\"serieName\": \"retail\",\"color\": \"#71A1F4\"},{\"serieName\": \"tech\",\"color\": \"#2E75F0\"}]}"
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}},\"showStackedLabels\": true,\"allLabels\": true},\"columnProperties\": [{\"columnId\": \"Customer_Sector\",\"columnProperty\": {}},{\"columnId\": \"Employee_ID\",\"columnProperty\": {}},{\"columnId\": \"Total Item Review_Rating\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"d6655916-8daf-4e30-a031-43a1c74fd444\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Employee_ID\"],\"isOpposite\": false}},{\"id\": \"4892ecfd-5090-4ab1-a9da-92824395165a\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Customer_Sector\"]}}],\"systemSeriesColors\": [{\"serieName\": \"{null}\",\"color\": \"#56D3A8\"},{\"serieName\": \"banking\",\"color\": \"#06BF7F\"},{\"serieName\": \"consulting\",\"color\": \"#FCD977\"},{\"serieName\": \"energy\",\"color\": \"#FCC838\"},{\"serieName\": \"fmcg\",\"color\": \"#82DFE9\"},{\"serieName\": \"others\",\"color\": \"#48D1E0\"},{\"serieName\": \"retail\",\"color\": \"#71A1F4\"},{\"serieName\": \"tech\",\"color\": \"#2E75F0\"}]}"
   display_mode: CHART_MODE
