@@ -21,7 +21,7 @@ answer:
     client_state: ""
     client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
   chart:
-    type: COLUMN
+    type: STACKED_COLUMN
     chart_columns:
     - column_id: Color
     - column_id: Total Discount
@@ -31,5 +31,5 @@ answer:
       "y":
       - Total Discount
     client_state: ""
-    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Color\",\"columnProperty\": {}},{\"columnId\": \"Total Discount\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"31367fae-cf19-4ee8-b194-fc79560405d5\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Discount\"],\"isOpposite\": false}},{\"id\": \"68265436-35e7-4465-8634-a6d339ff9fef\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Color\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Discount\",\"color\": \"#FCC838\"}]}"
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Color\",\"columnProperty\": {}},{\"columnId\": \"Total Discount\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"f8932056-fa9b-4c77-8b82-f55bb0b786b1\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Discount\"],\"isOpposite\": false}},{\"id\": \"e902dbc5-f9f1-43dd-ac00-87a7655e4b9a\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Color\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Discount\",\"color\": \"#FCC838\"}]}"
   display_mode: CHART_MODE
