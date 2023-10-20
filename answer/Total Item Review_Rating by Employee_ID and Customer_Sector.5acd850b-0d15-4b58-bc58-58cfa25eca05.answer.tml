@@ -1,0 +1,42 @@
+guid: 5acd850b-0d15-4b58-bc58-58cfa25eca05
+answer:
+  name: Total Item Review_Rating by Employee_ID and Customer_Sector
+  tables:
+  - id: Complex_Schema_Full_Outer_Join
+    name: Complex_Schema_Full_Outer_Join
+    fqn: e4c2d89d-f8fe-4e51-90b5-c6b8358bd6ea
+  search_query: "[Customer_Sector] [Item Review_Rating] [Employee_ID]"
+  answer_columns:
+  - name: Customer_Sector
+  - name: Total Item Review_Rating
+  - name: Employee_ID
+  table:
+    table_columns:
+    - column_id: Customer_Sector
+      headline_aggregation: COUNT_DISTINCT
+    - column_id: Employee_ID
+      headline_aggregation: COUNT_DISTINCT
+    - column_id: Total Item Review_Rating
+      headline_aggregation: SUM
+    ordered_column_ids:
+    - Customer_Sector
+    - Employee_ID
+    - Total Item Review_Rating
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+  chart:
+    type: STACKED_COLUMN
+    chart_columns:
+    - column_id: Customer_Sector
+    - column_id: Employee_ID
+    - column_id: Total Item Review_Rating
+    axis_configs:
+    - x:
+      - Employee_ID
+      "y":
+      - Total Item Review_Rating
+      color:
+      - Customer_Sector
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Customer_Sector\",\"columnProperty\": {}},{\"columnId\": \"Employee_ID\",\"columnProperty\": {}},{\"columnId\": \"Total Item Review_Rating\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"f2e4eb61-6db7-4ab0-92a3-59a0f94b2ac9\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Item Review_Rating\"],\"isOpposite\": false}},{\"id\": \"5b7e719a-af64-4263-8015-cee896650f4e\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Employee_ID\"]}}]}"
+  display_mode: CHART_MODE
