@@ -25,18 +25,17 @@ answer:
     client_state: ""
     client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
   chart:
-    type: STACKED_COLUMN
+    type: SANKEY
     chart_columns:
     - column_id: Customer_Sector
     - column_id: Employee_ID
     - column_id: Total Item Review_Rating
     axis_configs:
     - x:
+      - Customer_Sector
       - Employee_ID
       "y":
       - Total Item Review_Rating
-      color:
-      - Customer_Sector
     client_state: ""
-    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Customer_Sector\",\"columnProperty\": {}},{\"columnId\": \"Employee_ID\",\"columnProperty\": {}},{\"columnId\": \"Total Item Review_Rating\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"f2e4eb61-6db7-4ab0-92a3-59a0f94b2ac9\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Item Review_Rating\"],\"isOpposite\": false}},{\"id\": \"5b7e719a-af64-4263-8015-cee896650f4e\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Employee_ID\"]}}]}"
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Customer_Sector\",\"columnProperty\": {}},{\"columnId\": \"Employee_ID\",\"columnProperty\": {}},{\"columnId\": \"Total Item Review_Rating\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"e2ca55c7-f4c2-4843-8c53-ff70ad78db3c\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Item Review_Rating\"],\"isOpposite\": false}},{\"id\": \"1b6e73f0-d732-42d5-929f-b83b181bd4f9\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Customer_Sector\",\"Employee_ID\"]}}],\"systemSeriesColors\": [{\"serieName\": \"{null}\",\"color\": \"#56D3A8\"},{\"serieName\": \"banking\",\"color\": \"#06BF7F\"},{\"serieName\": \"consulting\",\"color\": \"#FCD977\"},{\"serieName\": \"energy\",\"color\": \"#FCC838\"},{\"serieName\": \"fmcg\",\"color\": \"#82DFE9\"},{\"serieName\": \"others\",\"color\": \"#48D1E0\"},{\"serieName\": \"retail\",\"color\": \"#71A1F4\"},{\"serieName\": \"tech\",\"color\": \"#2E75F0\"}]}"
   display_mode: CHART_MODE
