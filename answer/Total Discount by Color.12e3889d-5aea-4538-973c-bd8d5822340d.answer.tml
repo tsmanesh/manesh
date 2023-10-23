@@ -5,31 +5,43 @@ answer:
   - id: Parameters WS
     name: Parameters WS
     fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
-  search_query: "[Discount] [Color]"
+  formulas:
+  - id: test
+    name: test
+    expr: "sql_int_op ( [Color] )"
+    was_auto_generated: false
+  search_query: "[Discount] [Color] [test]"
   answer_columns:
   - name: Total Discount
   - name: Color
+  - name: Total test
   table:
     table_columns:
     - column_id: Color
       headline_aggregation: COUNT_DISTINCT
     - column_id: Total Discount
       headline_aggregation: SUM
+    - column_id: Total test
+      headline_aggregation: TABLE_AGGR
     ordered_column_ids:
     - Color
     - Total Discount
+    - Total test
     client_state: ""
     client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
   chart:
-    type: COLUMN
+    type: SCATTER
     chart_columns:
     - column_id: Color
     - column_id: Total Discount
+    - column_id: Total test
     axis_configs:
     - x:
-      - Color
-      "y":
       - Total Discount
+      "y":
+      - Total test
+      category:
+      - Color
     client_state: ""
-    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Color\",\"columnProperty\": {}},{\"columnId\": \"Total Discount\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"4fe65cb1-36aa-4754-b04e-798bbd3d0452\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Discount\"],\"isOpposite\": false}},{\"id\": \"a1581e6d-084a-493a-9157-0898f2f3bdb8\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Color\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Discount\",\"color\": \"#06BF7F\"}]}"
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Color\",\"columnProperty\": {}},{\"columnId\": \"Total Discount\",\"columnProperty\": {}},{\"columnId\": \"Total test\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"41621fe4-f076-49c7-b886-04254bc88cb2\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total test\"],\"isOpposite\": false}},{\"id\": \"ab9968c3-9c2b-4921-9027-0331072e3112\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Total Discount\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Discount\",\"color\": \"#06BF7F\"}]}"
   display_mode: CHART_MODE
