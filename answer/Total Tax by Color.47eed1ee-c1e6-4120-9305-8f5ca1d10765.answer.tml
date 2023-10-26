@@ -10,19 +10,23 @@ answer:
     name: test
     expr: "sql_int_op ( [Color] )"
     was_auto_generated: false
-  search_query: "[Tax] [Color]"
+  search_query: "[Tax] [Color] [test]"
   answer_columns:
   - name: Total Tax
   - name: Color
+  - name: Total test
   table:
     table_columns:
     - column_id: Color
       headline_aggregation: COUNT_DISTINCT
     - column_id: Total Tax
       headline_aggregation: SUM
+    - column_id: Total test
+      headline_aggregation: TABLE_AGGR
     ordered_column_ids:
     - Color
     - Total Tax
+    - Total test
     client_state: ""
     client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
   chart:
@@ -30,11 +34,12 @@ answer:
     chart_columns:
     - column_id: Color
     - column_id: Total Tax
+    - column_id: Total test
     axis_configs:
     - x:
       - Color
       "y":
       - Total Tax
     client_state: ""
-    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Color\",\"columnProperty\": {}},{\"columnId\": \"Total Tax\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"8dccac50-3915-42bb-87b8-38b50c50a558\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Tax\"],\"isOpposite\": false}},{\"id\": \"57173a77-fa05-4ba1-b1b2-56987d361c25\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Color\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Tax\",\"color\": \"#48D1E0\"}],\"tooltipConfig\": {}}"
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Color\",\"columnProperty\": {}},{\"columnId\": \"Total Tax\",\"columnProperty\": {}},{\"columnId\": \"Total test\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"8dccac50-3915-42bb-87b8-38b50c50a558\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Tax\"],\"isOpposite\": false}},{\"id\": \"57173a77-fa05-4ba1-b1b2-56987d361c25\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Color\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Tax\",\"color\": \"#48D1E0\"}],\"tooltipConfig\": {}}"
   display_mode: CHART_MODE
