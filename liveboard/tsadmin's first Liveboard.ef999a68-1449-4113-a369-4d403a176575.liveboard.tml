@@ -1,0 +1,240 @@
+guid: ef999a68-1449-4113-a369-4d403a176575
+liveboard:
+  name: tsadmin's first Liveboard
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Total Tax by Color
+      tables:
+      - id: Parameters WS
+        name: Parameters WS
+        fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
+      formulas:
+      - id: test
+        name: test
+        expr: "sql_int_op ( [Color] )"
+        was_auto_generated: false
+      search_query: "[Tax] [Color] [test]"
+      answer_columns:
+      - name: Total Tax
+      - name: Color
+      - name: Total test
+      table:
+        table_columns:
+        - column_id: Color
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Tax
+          headline_aggregation: SUM
+        - column_id: Total test
+          headline_aggregation: TABLE_AGGR
+        ordered_column_ids:
+        - Color
+        - Total Tax
+        - Total test
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: SCATTER
+        chart_columns:
+        - column_id: Color
+        - column_id: Total Tax
+        - column_id: Total test
+        axis_configs:
+        - x:
+          - Total Tax
+          "y":
+          - Total test
+          category:
+          - Color
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Color\",\"columnProperty\": {}},{\"columnId\": \"Total Tax\",\"columnProperty\": {}},{\"columnId\": \"Total test\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"c9e5ecd3-55e8-449d-9aae-e0397086f10a\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total test\"],\"isOpposite\": false}},{\"id\": \"15c6bbaf-d198-445a-b922-4caee4e51927\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Total Tax\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Tax\",\"color\": \"#48D1E0\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 0cd0d483-97d9-41d1-949e-411c6b341adc
+  - id: Viz_2
+    answer:
+      name: Total Tax by Color
+      tables:
+      - id: Parameters WS
+        name: Parameters WS
+        fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
+      formulas:
+      - id: test
+        name: test
+        expr: "sql_int_op ( [Color] )"
+        was_auto_generated: false
+      search_query: "[Tax] [Color] [test]"
+      answer_columns:
+      - name: Total Tax
+      - name: Color
+      - name: Total test
+      table:
+        table_columns:
+        - column_id: Color
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Tax
+          headline_aggregation: SUM
+        - column_id: Total test
+          headline_aggregation: TABLE_AGGR
+        ordered_column_ids:
+        - Color
+        - Total Tax
+        - Total test
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: SCATTER
+        chart_columns:
+        - column_id: Color
+        - column_id: Total Tax
+        - column_id: Total test
+        axis_configs:
+        - x:
+          - Total Tax
+          "y":
+          - Total test
+          category:
+          - Color
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Color\",\"columnProperty\": {}},{\"columnId\": \"Total Tax\",\"columnProperty\": {}},{\"columnId\": \"Total test\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"c9e5ecd3-55e8-449d-9aae-e0397086f10a\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total test\"],\"isOpposite\": false}},{\"id\": \"15c6bbaf-d198-445a-b922-4caee4e51927\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Total Tax\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Tax\",\"color\": \"#48D1E0\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 73b1666c-0038-44fd-ac7c-a401d643aaa0
+  - id: Viz_3
+    answer:
+      name: Total Tax by Color
+      tables:
+      - id: LINEORDER
+        name: LINEORDER
+        fqn: 2445fe81-30d6-46fa-9f42-f6b1b4e01623
+      - id: Parameters WS
+        name: Parameters WS
+        fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
+      table_paths:
+      - id: LINEORDER_1
+        table: LINEORDER
+        join_path:
+        - {}
+      - id: Parameters WS_1
+        table: Parameters WS
+        join_path:
+        - {}
+      formulas:
+      - id: test
+        name: test
+        expr: "sql_int_op ( [Parameters WS_1::Color] )"
+        was_auto_generated: false
+      search_query: "[LINEORDER_1::Quantity] [LINEORDER_1::Commit Date] [LINEORDER_1::Commit Date].monthly"
+      answer_columns:
+      - name: Total Quantity
+      - name: Month(Commit Date)
+      table:
+        table_columns:
+        - column_id: Month(Commit Date)
+          headline_aggregation: MIN-MAX
+        - column_id: Total Quantity
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Month(Commit Date)
+        - Total Quantity
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Month(Commit Date)
+        - column_id: Total Quantity
+        axis_configs:
+        - x:
+          - Month(Commit Date)
+          "y":
+          - Total Quantity
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"customProps\": \"{\\\"showLabel\\\":true,\\\"showComparison\\\":true,\\\"showSparkline\\\":true,\\\"showAnomalies\\\":true,\\\"showBounds\\\":true,\\\"customCompare\\\":\\\"PREV_AVAILABLE\\\"}\",\"pivotSummariesState\": {}},\"dataSize\": 5000.0},\"columnProperties\": [{\"columnId\": \"Month(Commit Date)\",\"columnProperty\": {}},{\"columnId\": \"Total Quantity\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"ea9972df-77c9-4b24-b2b3-6da7dc38c82d\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Quantity\"],\"isOpposite\": false}},{\"id\": \"d2d48655-bbb8-4960-b69d-0b2d319a424b\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Month(Commit Date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Quantity\",\"color\": \"#2770ef\"}],\"customColorSelectorArray\": [\"#06BF7F\",\"#FFCCB3\",\"#F04152\",\"#747E8C\"]}"
+      display_mode: CHART_MODE
+    viz_guid: 4f88f52c-5b99-4f1a-8900-6ddfecc8d8d4
+  - id: Viz_4
+    answer:
+      name: Total Tax by Color
+      tables:
+      - id: LINEORDER
+        name: LINEORDER
+        fqn: 2445fe81-30d6-46fa-9f42-f6b1b4e01623
+      - id: Parameters WS
+        name: Parameters WS
+        fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
+      table_paths:
+      - id: LINEORDER_1
+        table: LINEORDER
+        join_path:
+        - {}
+      - id: Parameters WS_1
+        table: Parameters WS
+        join_path:
+        - {}
+      formulas:
+      - id: test
+        name: test
+        expr: "sql_int_op ( [Parameters WS_1::Color] )"
+        was_auto_generated: false
+      search_query: "[LINEORDER_1::Quantity] [LINEORDER_1::Commit Date] [LINEORDER_1::Commit Date].monthly"
+      answer_columns:
+      - name: Total Quantity
+      - name: Month(Commit Date)
+      table:
+        table_columns:
+        - column_id: Month(Commit Date)
+          headline_aggregation: MIN-MAX
+        - column_id: Total Quantity
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Month(Commit Date)
+        - Total Quantity
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Month(Commit Date)
+        - column_id: Total Quantity
+        axis_configs:
+        - x:
+          - Month(Commit Date)
+          "y":
+          - Total Quantity
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"customProps\": \"{\\\"showLabel\\\":true,\\\"showComparison\\\":true,\\\"showSparkline\\\":true,\\\"showAnomalies\\\":true,\\\"showBounds\\\":true,\\\"customCompare\\\":\\\"PREV_AVAILABLE\\\"}\",\"pivotSummariesState\": {}},\"dataSize\": 5000.0},\"columnProperties\": [{\"columnId\": \"Month(Commit Date)\",\"columnProperty\": {}},{\"columnId\": \"Total Quantity\",\"columnProperty\": {\"conditionalFormatting\": {\"rows\": [{\"operator\": \"LESS_THAN\",\"value\": \"10000\",\"plotAsBand\": false}]}}}],\"axisProperties\": [{\"id\": \"4b418dd7-7e1d-4fc2-b010-ce3ab16c3e21\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Quantity\"],\"isOpposite\": false}},{\"id\": \"73334972-9b00-45d3-95f6-b9cf2b7a1c06\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Month(Commit Date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Quantity\",\"color\": \"#2770ef\"}],\"customColorSelectorArray\": [\"#06BF7F\",\"#FFCCB3\",\"#F04152\",\"#747E8C\"]}"
+      display_mode: CHART_MODE
+    viz_guid: e2c3620a-6af4-4124-aac3-d43448a31b7a
+  - id: Viz_5
+    answer:
+      name: Total test
+      tables:
+      - id: Parameters WS
+        name: Parameters WS
+        fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
+      formulas:
+      - id: test
+        name: test
+        expr: "sql_int_op ( [Color] )"
+        was_auto_generated: false
+      search_query: "[test]"
+      answer_columns:
+      - name: Total test
+      table:
+        table_columns:
+        - column_id: Total test
+          headline_aggregation: TABLE_AGGR
+        ordered_column_ids:
+        - Total test
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Total test\",\"columnProperty\": {}}]}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Total test
+        axis_configs:
+        - "y":
+          - Total test
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Total test\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"adaedac0-3547-4577-b9b9-4811c3e72bf5\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total test\"],\"isOpposite\": false}},{\"id\": \"c7f21a5d-fdf3-43a1-a850-7751c7b67dd2\",\"properties\": {\"axisType\": \"X\"}}]}"
+      display_mode: CHART_MODE
+    viz_guid: 4ea54048-171a-4ef4-85b6-54cc42216e49
