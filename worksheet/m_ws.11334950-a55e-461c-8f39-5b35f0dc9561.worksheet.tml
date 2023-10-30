@@ -1,0 +1,33 @@
+guid: 11334950-a55e-461c-8f39-5b35f0dc9561
+worksheet:
+  name: m_ws
+  tables:
+  - name: ACCOUNT_HISTORY
+    fqn: e1eb720c-0e23-4006-8771-fe32b7f040a4
+  table_paths:
+  - id: ACCOUNT_HISTORY_1
+    table: ACCOUNT_HISTORY
+    join_path:
+    - {}
+  worksheet_columns:
+  - name: Amount Spent
+    column_id: ACCOUNT_HISTORY_1::AMOUNT_SPENT
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Business Country Code
+    column_id: ACCOUNT_HISTORY_1::BUSINESS_COUNTRY_CODE
+    properties:
+      column_type: ATTRIBUTE
+  - name: Agency Client Declaration Client Email Address
+    column_id: ACCOUNT_HISTORY_1::AGENCY_CLIENT_DECLARATION_CLIENT_EMAIL_ADDRESS
+    properties:
+      column_type: ATTRIBUTE
+  - name: Agency Client Declaration Client Province
+    column_id: ACCOUNT_HISTORY_1::AGENCY_CLIENT_DECLARATION_CLIENT_PROVINCE
+    properties:
+      column_type: ATTRIBUTE
+  properties:
+    is_bypass_rls: false
+    join_progressive: true
