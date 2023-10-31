@@ -1,0 +1,111 @@
+guid: bcff7325-507a-4da1-ad96-e99e29065259
+worksheet:
+  name: w_manesh_2
+  tables:
+  - name: LINEORDER
+    fqn: 2445fe81-30d6-46fa-9f42-f6b1b4e01623
+  - name: PART
+    fqn: a7fc012e-bdb3-4e75-9ce4-b3f731d90136
+  joins:
+  - name: Lineorder PartKey - Part PartKey
+    source: LINEORDER
+    destination: PART
+    type: INNER
+    is_one_to_one: false
+  table_paths:
+  - id: LINEORDER_1
+    table: LINEORDER
+    join_path:
+    - {}
+  - id: PART_1
+    table: PART
+    join_path:
+    - join:
+      - Lineorder PartKey - Part PartKey
+  worksheet_columns:
+  - name: Orderkey
+    column_id: LINEORDER_1::OrderKey
+    properties:
+      column_type: ATTRIBUTE
+  - name: Line Number
+    column_id: LINEORDER_1::Line Number
+    properties:
+      column_type: ATTRIBUTE
+  - name: Lineorder Custkey
+    column_id: LINEORDER_1::Lineorder CustKey
+    properties:
+      column_type: ATTRIBUTE
+  - name: Lineorder Partkey
+    column_id: LINEORDER_1::Lineorder PartKey
+    properties:
+      column_type: ATTRIBUTE
+  - name: Lineorder Suppkey
+    column_id: LINEORDER_1::Lineorder Suppkey
+    properties:
+      column_type: ATTRIBUTE
+  - name: Order Date
+    column_id: LINEORDER_1::Order Date
+    properties:
+      column_type: ATTRIBUTE
+  - name: Order Priority
+    column_id: LINEORDER_1::Order Priority
+    properties:
+      column_type: ATTRIBUTE
+  - name: Discount
+    column_id: LINEORDER_1::Discount
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+  - name: Revenue
+    column_id: LINEORDER_1::Revenue
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+  - name: Tax
+    column_id: LINEORDER_1::Tax
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+  - name: Ship Mode
+    column_id: LINEORDER_1::Ship Mode
+    properties:
+      column_type: ATTRIBUTE
+  - name: Part Partkey
+    column_id: PART_1::Part PartKey
+    properties:
+      column_type: ATTRIBUTE
+  - name: Part Name
+    column_id: PART_1::Part Name
+    properties:
+      column_type: ATTRIBUTE
+  - name: Manufacturer
+    column_id: PART_1::Manufacturer
+    properties:
+      column_type: ATTRIBUTE
+  - name: Category
+    column_id: PART_1::Category
+    properties:
+      column_type: ATTRIBUTE
+  - name: Brand1
+    column_id: PART_1::Brand1
+    properties:
+      column_type: ATTRIBUTE
+  - name: Color
+    column_id: PART_1::Color
+    properties:
+      column_type: ATTRIBUTE
+  - name: Type
+    column_id: PART_1::Type
+    properties:
+      column_type: ATTRIBUTE
+  - name: Size
+    column_id: PART_1::Size
+    properties:
+      column_type: ATTRIBUTE
+  - name: Container
+    column_id: PART_1::Container
+    properties:
+      column_type: ATTRIBUTE
+  properties:
+    is_bypass_rls: false
+    join_progressive: true
