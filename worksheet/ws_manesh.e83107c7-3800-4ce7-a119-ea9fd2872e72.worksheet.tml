@@ -1,0 +1,42 @@
+guid: e83107c7-3800-4ce7-a119-ea9fd2872e72
+worksheet:
+  name: ws_manesh
+  tables:
+  - name: COLUMNS
+    fqn: e1640ae0-c1e6-456e-80a8-fa706fcbf4ab
+  table_paths:
+  - id: COLUMNS_1
+    table: COLUMNS
+    join_path:
+    - {}
+  worksheet_columns:
+  - name: Table Schema
+    description: Schema that the table belongs to
+    column_id: COLUMNS_1::TABLE_SCHEMA
+    properties:
+      column_type: ATTRIBUTE
+  - name: Table Name
+    description: Table that the column belongs to
+    column_id: COLUMNS_1::TABLE_NAME
+    properties:
+      column_type: ATTRIBUTE
+  - name: Column Name
+    description: Name of the column
+    column_id: COLUMNS_1::COLUMN_NAME
+    properties:
+      column_type: ATTRIBUTE
+  - name: Ordinal Position
+    description: Ordinal position of the column in the table
+    column_id: COLUMNS_1::ORDINAL_POSITION
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Column Default
+    description: Default value of the column
+    column_id: COLUMNS_1::COLUMN_DEFAULT
+    properties:
+      column_type: ATTRIBUTE
+  properties:
+    is_bypass_rls: false
+    join_progressive: true
