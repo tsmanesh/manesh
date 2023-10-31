@@ -1,0 +1,33 @@
+guid: 9d8d4d95-3dc9-439a-be91-9a80934005d4
+answer:
+  name: Total test
+  tables:
+  - id: Parameters WS
+    name: Parameters WS
+    fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
+  formulas:
+  - id: test
+    name: test
+    expr: "sql_int_op ( [Color] ) "
+    was_auto_generated: false
+  search_query: "[test]"
+  answer_columns:
+  - name: Total test
+  table:
+    table_columns:
+    - column_id: Total test
+      headline_aggregation: TABLE_AGGR
+    ordered_column_ids:
+    - Total test
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Total test\",\"columnProperty\": {}}]}"
+  chart:
+    type: KPI
+    chart_columns:
+    - column_id: Total test
+    axis_configs:
+    - "y":
+      - Total test
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Total test\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"f009e55f-7c69-4d17-9fec-bb3528c2dd47\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total test\"],\"isOpposite\": false}},{\"id\": \"7ff78e94-413e-4d21-85c1-de6a66386bbc\",\"properties\": {\"axisType\": \"X\"}}]}"
+  display_mode: CHART_MODE
