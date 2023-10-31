@@ -4,11 +4,24 @@ worksheet:
   tables:
   - name: COLUMNS
     fqn: e1640ae0-c1e6-456e-80a8-fa706fcbf4ab
+  - name: CURRENT_PACKAGES_POLICY
+    fqn: 3dfee286-3cbc-4a48-89b9-1b7690c1640f
+  joins:
+  - name: CURRENT_PACKAGES_POLICY_to_COLUMNS
+    source: COLUMNS
+    destination: CURRENT_PACKAGES_POLICY
+    type: INNER
+    is_one_to_one: false
   table_paths:
   - id: COLUMNS_1
     table: COLUMNS
     join_path:
     - {}
+  - id: CURRENT_PACKAGES_POLICY_1
+    table: CURRENT_PACKAGES_POLICY
+    join_path:
+    - join:
+      - CURRENT_PACKAGES_POLICY_to_COLUMNS
   worksheet_columns:
   - name: Table Schema
     description: Schema that the table belongs to
@@ -35,6 +48,31 @@ worksheet:
   - name: Column Default
     description: Default value of the column
     column_id: COLUMNS_1::COLUMN_DEFAULT
+    properties:
+      column_type: ATTRIBUTE
+  - name: Language
+    description: Package language
+    column_id: CURRENT_PACKAGES_POLICY_1::LANGUAGE
+    properties:
+      column_type: ATTRIBUTE
+  - name: Allowlist
+    description: Allowlist
+    column_id: CURRENT_PACKAGES_POLICY_1::ALLOWLIST
+    properties:
+      column_type: ATTRIBUTE
+  - name: Blocklist
+    description: BLocklist
+    column_id: CURRENT_PACKAGES_POLICY_1::BLOCKLIST
+    properties:
+      column_type: ATTRIBUTE
+  - name: Additional Creation Blocklist
+    description: Additional creation blocklist
+    column_id: CURRENT_PACKAGES_POLICY_1::ADDITIONAL_CREATION_BLOCKLIST
+    properties:
+      column_type: ATTRIBUTE
+  - name: Comment
+    description: comment
+    column_id: CURRENT_PACKAGES_POLICY_1::COMMENT
     properties:
       column_type: ATTRIBUTE
   properties:
